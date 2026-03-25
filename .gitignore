@@ -1,0 +1,23 @@
+# Environment variables
+.env
+
+# Cookies (VERY IMPORTANT)
+cookies.txt
+
+# Audio files
+audio.*
+*.mp3
+*.m4a
+*.wav
+
+# Python
+__pycache__/
+*.pyc
+
+# Streamlit
+.streamlit/
+
+# OS junk
+.DS_Store
+# Executables
+*.exe
