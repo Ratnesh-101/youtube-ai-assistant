@@ -1,16 +1,17 @@
 # 🔥 YouTube AI Assistant
 
-An AI-powered Streamlit app that lets you **summarize, analyze, and interact with any YouTube video** using Whisper and Gemini.
+An AI-powered Streamlit app that lets you **summarize, analyze, and interact with any YouTube video** using OpenAI and Whisper.
 
 ---
 
 ## 🚀 Features
 
 - 🎬 Paste any YouTube link and process instantly  
-- 🧠 Transcribes audio using OpenAI Whisper  
-- ✨ Generates smart summaries using Gemini API  
-- 💬 Ask questions about the video content  
-- 🔄 Local fallback summarization  
+- ⚡ Fast transcript extraction using YouTube Transcript API  
+- 🎧 Whisper fallback for videos without captions  
+- 🧠 AI-powered summaries using OpenAI (GPT-4o-mini)  
+- 💬 Ask questions about video content  
+- 🔄 Local fallback summarization (never breaks)  
 - 🖼️ Automatic thumbnail preview  
 - 📄 Downloadable summary notes  
 
@@ -20,9 +21,10 @@ An AI-powered Streamlit app that lets you **summarize, analyze, and interact wit
 
 - Python  
 - Streamlit  
+- OpenAI API (GPT-4o-mini)  
 - OpenAI Whisper  
-- Google Gemini API  
-- yt-dlp  
+- YouTube Transcript API  
+- yt-dlp (fallback)  
 - ffmpeg  
 
 ---
@@ -33,25 +35,3 @@ An AI-powered Streamlit app that lets you **summarize, analyze, and interact wit
 git clone https://github.com/Ratnesh-101/youtube-ai-assistant.git
 cd youtube-ai-assistant
 pip install -r requirements.txt
-
-
-
-⚙️ Setup
-Install ffmpeg and update its path in the code
-Create a .env file:
-GOOGLE_API_KEY=your_api_key
-(Optional) Add cookies for restricted videos
-▶️ Usage
-streamlit run app.py
-
-Then:
-
-Paste a YouTube link
-Generate summary or ask questions
-📄 License
-
-MIT License
-
-👤 Author
-
-Ratnesh Singh
