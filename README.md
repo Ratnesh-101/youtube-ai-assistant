@@ -21,7 +21,7 @@ An AI-powered Streamlit app that lets you **summarize, analyze, and interact wit
 
 - Python  
 - Streamlit  
-- OpenAI API (GPT-4o-mini)  
+- OpenAI API (GPT-5o-mini)  
 - OpenAI Whisper  
 - YouTube Transcript API  
 - yt-dlp (fallback)  
