@@ -1,3 +1,5 @@
+import subprocess
+subprocess.run(["pip", "install", "-U", "yt-dlp"], capture_output=True)
 import streamlit as st
 from dotenv import load_dotenv
 import os
@@ -68,7 +70,9 @@ def extract_transcript(url):
             'outtmpl': audio_file,
             'quiet': True,
             'noplaylist': True,
-            'cookiesfile': "cookies.txt",
+            'cookiefile': "cookies.txt",
+            'js_runtimes': {'node': {}},              # ← dict format
+            'remote_components': ['ejs:github'],       # ← list format
             'retries': 10,
             'ignoreerrors': True
         }
